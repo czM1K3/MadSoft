@@ -1,0 +1,12 @@
+{
+	"Index": {
+		"hello": "Hello"
+	},
+	"Projects": {
+		"title": "Projects"
+	},
+	"Routing": {
+		"index": "Home",
+		"projects": "Projects"
+	}
+}

@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Script from "next/script";
 import React, { FC, useEffect } from "react";
 import Navbar from "./navbar";
 
 type LayoutProps = {
 	title?: string;
+	disableContainer?: true;
 };
 
-const Layout: FC<LayoutProps> = ({ children, title = "MadSoft" }) => {
+const Layout: FC<LayoutProps> = ({ children, title = "MadSoft", disableContainer = false }) => {
 	useEffect(() => {
 		(async () => {
 			const M = await import("materialize-css");
@@ -23,11 +23,12 @@ const Layout: FC<LayoutProps> = ({ children, title = "MadSoft" }) => {
 			</Head>
 			<main>
 				<Navbar />
-				{children}
-				{/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" /> */}
+				<div className={disableContainer ? "" : "container"}>
+					{children}
+				</div>
 			</main>
 		</>
-	)
-;};
+	);
+};
 
 export default Layout;

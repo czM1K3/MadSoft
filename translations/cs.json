@@ -1,0 +1,12 @@
+{
+	"Index": {
+		"hello": "Ahoj"
+	},
+	"Projects": {
+		"title": "Projekty"
+	},
+	"Routing": {
+		"index": "Domů",
+		"projects": "Projekty"
+	}
+}

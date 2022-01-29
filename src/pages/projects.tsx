@@ -2,11 +2,11 @@ import type { GetStaticProps, NextPage } from "next";
 import Layout from "../components/layout";
 import { useTranslations } from "next-intl";
 
-const Home: NextPage = () => {
-  const t = useTranslations("Index");
+const Projects: NextPage = () => {
+  const t = useTranslations("Projects");
   return (
     <Layout>
-      {t("hello")}
+      {t("title")}
     </Layout>
   );
 };
@@ -19,4 +19,4 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   };
 };
 
-export default Home;
+export default Projects;
