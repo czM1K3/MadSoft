@@ -11,6 +11,7 @@
     "materialize-css": "^1.0.0-rc.2",
     "next": "12.0.9",
     "next-intl": "^2.3.5",
+    "plyr-react": "^3.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-tsparticles": "^1.39.2",

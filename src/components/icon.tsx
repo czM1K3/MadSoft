@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Image from "next/image";
+import styles from "../styles/about.module.scss";
 
 type IconProps = {
 	image: string;
@@ -7,7 +8,7 @@ type IconProps = {
 };
 
 const Icon: FC<IconProps> = ({ image, url }) => (
-	<a href={url}>
+	<a href={url} className={styles.hover}>
 		<Image src={`/icons/${image}`} width="32px" height="32px" alt={image} />
 	</a>
 );
