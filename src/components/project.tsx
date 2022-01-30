@@ -14,7 +14,7 @@ const Project: FC<ProjectProps> = ({ description, image, title, url, download, g
 				<Image src={image} layout="responsive" sizes="30vw" width="10%" height="10%" alt={t(title)} className={styles.image} />
 				<span className={"card-title " + styles.shadow}>{t(title)}</span>
 			</div>
-			<div className="card-content">
+			<div className={"card-content " + styles.description}>
 				<p>{t(description)}</p>
 			</div>
 			<div className="card-action">

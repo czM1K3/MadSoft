@@ -25,6 +25,9 @@
 	"About": {
 		"title": "O mně",
 		"text1": "Jmenuji se Michal Maděra a jsem softwareový vývojář z České republiky. Rád programuji a rád se učím nové technologie abych zlepšoval svoje dovednosti. Momentálně jsem freelancer a studuji na škole Delta SŠIE v Pardubicích.",
+		"contact": "Kontakt",
+		"technologies": "Technologie",
+		"text2": "Technologie které používám:",
 		"projects": "Moje projekty"
 	},
 	"Routing": {

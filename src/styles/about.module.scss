@@ -15,3 +15,21 @@
 .text {
 	text-align: justify;
 }
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.centerPadding {
+	@extend .center;
+	padding: 20px;
+}
+
+.centerIcons {
+	display: flex;
+	justify-content: center;
+	> * {
+		margin: 10px;
+	}
+}
