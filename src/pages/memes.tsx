@@ -28,7 +28,7 @@ const Memes: NextPage<MemesProps> = ({ videos }) => {
 
 			<ul className="collection">
 				{videos.filter((video) => nsfw ? true:!video.nsfw).map((video) => (
-					<li className="collection-item">
+					<li className="collection-item" key={video.name}>
 						<div className={styles.row}>
 							<div className={styles.text}>{video.name}</div>
 							<button
