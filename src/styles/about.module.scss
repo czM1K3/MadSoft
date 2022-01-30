@@ -1,0 +1,17 @@
+.heading {
+	text-align: center;
+}
+
+.profile {
+	display: flex;
+	justify-content: center;
+	
+	> div {
+		max-width: 50%;
+		width: 300px;
+	}
+}
+
+.text {
+	text-align: justify;
+}

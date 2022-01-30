@@ -5,8 +5,14 @@
 	"Projects": {
 		"title": "Projects"
 	},
+	"About": {
+		"title": "About",
+		"text1": "My name is Michal Maděra and I'm a software developer from Czech Republic. I have a passion for programming and I'm always looking for new ways to improve my skills. I'm currently working as a freelancer and I'm also a student on Delta SŠIE in Pardubice.",
+		"projects": "My projects"
+	},
 	"Routing": {
 		"index": "Home",
-		"projects": "Projects"
+		"projects": "Projects",
+		"about": "About"
 	}
 }

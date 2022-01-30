@@ -12,6 +12,10 @@ const NavbarItems: NavbarItem[] = [
 		url: "/",
 	},
 	{
+		title: "about",
+		url: "/about",
+	},
+	{
 		title: "projects",
 		url: "/projects",
 	},
@@ -22,8 +26,8 @@ const Navbar: FC = () => {
 	return (
 		<>
 			<nav>
-				<div className="nav-wrapper">
-					<Link href="#!" passHref>
+				<div className="nav-wrapper container">
+					<Link href="/" passHref>
 						<a className="brand-logo" style={{ padding: "5px" }}>
 							<Image src={Logo} height={50} width={50} />
 						</a>
