@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <Layout disableContainer>
       <div className={styles.middle}>
-        <Image src={Logo} height={200} width={200} />
+        <Image src={Logo} height={200} width={200} alt="Big logo of MadSoft" />
         <div>
           <Link href="/about">
             <a className="btn-floating btn-large waves-effect waves-light indigo"><i className="material-icons">arrow_forward</i></a>

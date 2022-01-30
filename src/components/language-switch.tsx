@@ -21,7 +21,7 @@ type ButtonProps = {
 const Button: FC<ButtonProps> = ({ isEn, pathname }) => (
 	<Link href={pathname} locale={isEn ? "en":"cs"} passHref>
 		<a className={styles.link}>
-			<Image src={isEn ? US : CZ} height={30} width={30} />
+			<Image src={isEn ? US : CZ} height={30} width={30} alt={isEn ? "US flag":"CZ flag"} />
 		</a>
 	</Link>
 );

@@ -13,7 +13,7 @@ const About: NextPage = () => {
       <h1 className={styles.heading}>{t("title")}</h1>
       <div className={styles.profile}>
         <div>
-          <Image src={ProfilePicture} layout="responsive" sizes="50vw" />
+          <Image src={ProfilePicture} layout="responsive" sizes="50vw" alt="Profile picture of Michal" />
         </div>
       </div>
       <p className={styles.text}>{t("text1")}</p>
