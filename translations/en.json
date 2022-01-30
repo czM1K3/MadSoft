@@ -3,7 +3,24 @@
 		"hello": "Hello"
 	},
 	"Projects": {
-		"title": "Projects"
+		"title": "Projects",
+		"link": "Link",
+		"download": "Download",
+		"git": "Git",
+		"DeltaTimeTitle": "Delta Time",
+		"DeltaTimeDescription": "DeltaTime is countdown app that show how much time is left until the end of the hour. I even show current subject and lunch.",
+		"AzureBeersTitle": "Azure Beers",
+		"AzureBeersDescription": "App for counting beers with AI. Model was trained on Microsoft Azure.",
+		"ThinkNumberTitle": "Think Number",
+		"ThinkNumberDescription": "Game for you to guess the generated nubmer.",
+		"MaturitaTitle": "Graduation",
+		"MaturitaDescription": "Graduation is website with graduation questions.",
+		"ParduGOTitle": "ParduGO",
+		"ParduGODescription": "ParduGO is website for planning actions in Pardubice. It was made on hackathon for Foxconn.",
+		"KeychainGeneratorTitle": "Keychain Generator",
+		"KeychainGeneratorDescription": "Keychain Generator is app for generating keychains 3D models.",
+		"DasakLunchTitle": "Dasak Lunch",
+		"DasakLunchDescription": "Dasak Lunch is app for photos of lunches on Dašák in Pardubice."
 	},
 	"About": {
 		"title": "About",
