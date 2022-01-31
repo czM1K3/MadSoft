@@ -27,42 +27,46 @@ const Memes: NextPage<MemesProps> = ({ videos }) => {
 			<h1>Memes</h1>
 
 			<ul className="collection">
-				{videos.filter((video) => nsfw ? true:!video.nsfw).map((video) => (
-					<li className="collection-item" key={video.name}>
-						<div className={styles.row}>
-							<div className={styles.text}>{video.name}</div>
-							<button
-								data-target="modal1"
-								className="btn-floating btn-large waves-effect waves-light indigo modal-trigger"
-								onClick={() => {
-									setVideo(video.url);
-								}}
-							>
-								<i className="material-icons">play_arrow</i>
-							</button>
-						</div>
-					</li>
-				))}
+				{videos
+					.filter((video) => (nsfw ? true : !video.nsfw))
+					.map((video) => (
+						<li className="collection-item" key={video.name}>
+							<div className={styles.row}>
+								<div className={styles.text}>{video.name}</div>
+								<button
+									data-target="modal1"
+									className="btn-floating btn-large waves-effect waves-light indigo modal-trigger"
+									onClick={() => {
+										setVideo(video.url);
+									}}
+								>
+									<i className="material-icons">play_arrow</i>
+								</button>
+							</div>
+						</li>
+					))}
 			</ul>
 
 			<div id="modal1" className="modal">
 				<div className="modal-content">
-					<Plyr source={{
-						type: 'video',
-						sources: [
-							{ src: video, provider: "youtube" },
-						]
-					}} />
+					<Plyr
+						source={{
+							type: "video",
+							sources: [{ src: video, provider: "youtube" }],
+						}}
+					/>
 				</div>
 				<div className="modal-footer">
 					<div className="modal-close btn-flat waves-effect waves-light">Close</div>
 				</div>
 			</div>
 		</Layout>
-	)
+	);
 };
 
-export const getStaticProps: GetStaticProps<MemesProps> = async ({ locale }) => {
+export const getStaticProps: GetStaticProps<MemesProps> = async ({
+	locale,
+}) => {
 	return {
 		props: {
 			messages: (await import(`../../translations/${locale}.json`)).default,

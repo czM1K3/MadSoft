@@ -9,8 +9,9 @@ import styles from "../styles/language-switch.module.scss";
 const LanguageSwitch: FC = () => {
 	const router = useRouter();
 
-	if (router.locale === "en") return <Button isEn={false} pathname={router.asPath} />;
-	return <Button isEn={true} pathname={router.asPath} />
+	if (router.locale === "en")
+		return <Button isEn={false} pathname={router.asPath} />;
+	return <Button isEn={true} pathname={router.asPath} />;
 };
 
 type ButtonProps = {
@@ -19,9 +20,14 @@ type ButtonProps = {
 };
 
 const Button: FC<ButtonProps> = ({ isEn, pathname }) => (
-	<Link href={pathname} locale={isEn ? "en":"cs"} passHref>
+	<Link href={pathname} locale={isEn ? "en" : "cs"} passHref>
 		<a className={styles.link}>
-			<Image src={isEn ? US : CZ} height={30} width={30} alt={isEn ? "US flag":"CZ flag"} />
+			<Image
+				src={isEn ? US : CZ}
+				height={30}
+				width={30}
+				alt={isEn ? "US flag" : "CZ flag"}
+			/>
 		</a>
 	</Link>
 );

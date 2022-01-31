@@ -17,7 +17,8 @@ const Projects: Project[] = [
 	{
 		title: "ThinkNumberTitle",
 		description: "ThinkNumberDescription",
-		download: "https://play.google.com/store/apps/details?id=com.maderamichal.hadejcislo",
+		download:
+			"https://play.google.com/store/apps/details?id=com.maderamichal.hadejcislo",
 		image: "/projects/think-number.webp",
 	},
 	{
@@ -44,7 +45,8 @@ const Projects: Project[] = [
 	{
 		title: "DasakLunchTitle",
 		description: "DasakLunchDescription",
-		download: "https://play.google.com/store/apps/details?id=cz.madsoft.dasaklunch",
+		download:
+			"https://play.google.com/store/apps/details?id=cz.madsoft.dasaklunch",
 		url: "https://dasak-lunch.madsoft.cz/",
 		git: "https://github.com/czM1K3/DasakLunch",
 		image: "/projects/dasak-lunch.png",

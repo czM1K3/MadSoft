@@ -6,12 +6,27 @@ import Image from "next/image";
 
 type ProjectProps = Project;
 
-const Project: FC<ProjectProps> = ({ description, image, title, url, download, git }) => {
+const Project: FC<ProjectProps> = ({
+	description,
+	image,
+	title,
+	url,
+	download,
+	git,
+}) => {
 	const t = useTranslations("Projects");
 	return (
 		<div className="card">
 			<div className="card-image">
-				<Image src={image} layout="responsive" sizes="30vw" width="10%" height="10%" alt={t(title)} className={styles.image} />
+				<Image
+					src={image}
+					layout="responsive"
+					sizes="30vw"
+					width="10%"
+					height="10%"
+					alt={t(title)}
+					className={styles.image}
+				/>
 				<span className={"card-title " + styles.shadow}>{t(title)}</span>
 			</div>
 			<div className={"card-content " + styles.description}>
