@@ -29,10 +29,12 @@ const Navbar: FC = () => {
 				<div className="nav-wrapper container">
 					<Link href="/" passHref>
 						<a className="brand-logo" style={{ padding: "5px" }}>
-							<Image src={Logo} height={50} width={50} />
+							<Image src={Logo} height={50} width={50} alt="Small MadSoft logo" />
 						</a>
 					</Link>
-					<a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+					<a href="#" data-target="mobile-demo" className="sidenav-trigger">
+						<i className="material-icons">menu</i>
+					</a>
 					<ul className="right hide-on-med-and-down">
 						{NavbarItems.map((item) => (
 							<li key={item.url}>

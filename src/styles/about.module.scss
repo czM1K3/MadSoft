@@ -5,13 +5,41 @@
 .profile {
 	display: flex;
 	justify-content: center;
-	
+
 	> div {
 		max-width: 50%;
 		width: 300px;
+		img {
+			border-radius: 5px;
+		}
 	}
 }
 
 .text {
 	text-align: justify;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.centerPadding {
+	@extend .center;
+	padding: 20px;
+}
+
+.centerIcons {
+	display: flex;
+	justify-content: center;
+	> * {
+		margin: 10px;
+	}
+}
+
+.hover {
+	transition: transform 0.2s;
+	&:hover {
+		transform: scale(1.2);
+	}
 }

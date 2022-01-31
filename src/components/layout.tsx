@@ -7,7 +7,11 @@ type LayoutProps = {
 	disableContainer?: true;
 };
 
-const Layout: FC<LayoutProps> = ({ children, title = "MadSoft", disableContainer = false }) => {
+const Layout: FC<LayoutProps> = ({
+	children,
+	title = "MadSoft",
+	disableContainer = false,
+}) => {
 	useEffect(() => {
 		(async () => {
 			const M = await import("materialize-css");
@@ -23,9 +27,7 @@ const Layout: FC<LayoutProps> = ({ children, title = "MadSoft", disableContainer
 			</Head>
 			<main>
 				<Navbar />
-				<div className={disableContainer ? "" : "container"}>
-					{children}
-				</div>
+				<div className={disableContainer ? "" : "container"}>{children}</div>
 			</main>
 		</>
 	);
