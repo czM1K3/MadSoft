@@ -9,8 +9,8 @@ import styles from "../styles/language-switch.module.scss";
 const LanguageSwitch: FC = () => {
 	const router = useRouter();
 
-	if (router.locale === "en") return <Button isEn={false} pathname={router.pathname} />;
-	return <Button isEn={true} pathname={router.pathname} />
+	if (router.locale === "en") return <Button isEn={false} pathname={router.asPath} />;
+	return <Button isEn={true} pathname={router.asPath} />
 };
 
 type ButtonProps = {
