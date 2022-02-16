@@ -28,7 +28,13 @@
 		"contact": "Contacts",
 		"technologies": "Technologies",
 		"text2": "Technologies that I use:",
-		"projects": "My projects"
+		"projects": "My projects",
+		"age": "You can check my age",
+		"here": "here"
+	},
+	"Age": {
+		"title": "Age",
+		"text": "My age is:"
 	},
 	"Routing": {
 		"index": "Home",

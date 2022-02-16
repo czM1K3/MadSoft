@@ -31,7 +31,11 @@ const About: NextPage<AboutProps> = () => {
 					/>
 				</div>
 			</div>
-			<p className={styles.text}>{t("text1")}</p>
+			<p className={styles.text}>
+				{t("text1")}{` `}
+				{t("age")}{` `}
+				<Link href="/age">{t("here")}</Link>{`.`}
+			</p>
 
 			<h2 className={styles.heading}>{t("technologies")}</h2>
 			<div className={styles.center}>
