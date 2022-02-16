@@ -28,7 +28,13 @@
 		"contact": "Kontakt",
 		"technologies": "Technologie",
 		"text2": "Technologie které používám:",
-		"projects": "Moje projekty"
+		"projects": "Moje projekty",
+		"age": "Můj věk můžete zjistit",
+		"here": "zde"
+	},
+	"Age": {
+		"title": "Věk",
+		"text": "Můj věk je:"
 	},
 	"Routing": {
 		"index": "Domů",
