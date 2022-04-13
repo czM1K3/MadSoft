@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import styles from "../styles/age.module.scss";
 
-const myDateOfBirth = 1036051200000;
+const myDateOfBirth = 1036048800000;
 
 const Age: NextPage = () => {
 	const t = useTranslations("Age");
