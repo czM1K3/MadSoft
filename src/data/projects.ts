@@ -51,6 +51,12 @@ const Projects: Project[] = [
 		git: "https://github.com/czM1K3/DasakLunch",
 		image: "/projects/dasak-lunch.png",
 	},
+	{
+		title: "CodeventureTitle",
+		description: "CodeventureDescription",
+		url: "https://www.codeventure.cz/",
+		image: "/projects/codeventure.png",
+	}
 ];
 
 export default Projects;

@@ -20,7 +20,9 @@
 		"KeychainGeneratorTitle": "Keychain Generator",
 		"KeychainGeneratorDescription": "Keychain Generator is app for generating keychains 3D models.",
 		"DasakLunchTitle": "Dasak Lunch",
-		"DasakLunchDescription": "Dasak Lunch is app for photos of lunches on Dašák in Pardubice."
+		"DasakLunchDescription": "Dasak Lunch is app for photos of lunches on Dašák in Pardubice.",
+		"CodeventureTitle": "Codeventure",
+		"CodeventureDescription": "Codeventure is a game for primary school children that develops logical thinking."
 	},
 	"About": {
 		"title": "About",

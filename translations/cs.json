@@ -20,7 +20,9 @@
 		"KeychainGeneratorTitle": "Keychain Generator",
 		"KeychainGeneratorDescription": "Keychain Generator je web pro generování klíčenek co jsou vytisknutelné na 3D tiskárně.",
 		"DasakLunchTitle": "Dasak Lunch",
-		"DasakLunchDescription": "Dasak Lunch je aplikace pro focení obědů na Dašáku v Pardubicích."
+		"DasakLunchDescription": "Dasak Lunch je aplikace pro focení obědů na Dašáku v Pardubicích.",
+		"CodeventureTitle": "Codeventure",
+		"CodeventureDescription": "Codeventure je hra pro děti na základních školách která rozvýjí logické myšlení."
 	},
 	"About": {
 		"title": "O mně",
