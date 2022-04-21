@@ -4,7 +4,7 @@ import { Project } from "../types/project";
 import styles from "../styles/projects.module.scss";
 import Image from "next/image";
 
-type ProjectProps = Project;
+type ProjectProps = Project & { imageHash: string };
 
 const Project: FC<ProjectProps> = ({
 	description,
@@ -13,6 +13,7 @@ const Project: FC<ProjectProps> = ({
 	url,
 	download,
 	git,
+	imageHash,
 }) => {
 	const t = useTranslations("Projects");
 	return (
@@ -22,10 +23,12 @@ const Project: FC<ProjectProps> = ({
 					src={image}
 					layout="responsive"
 					sizes="30vw"
-					width="10%"
-					height="10%"
+					width="500px"
+					height="500px"
 					alt={t(title)}
 					className={styles.image}
+					placeholder="blur"
+					blurDataURL={imageHash}
 				/>
 				<span className={"card-title " + styles.shadow}>{t(title)}</span>
 			</div>

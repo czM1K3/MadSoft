@@ -13,7 +13,7 @@ const Age: NextPage = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			const miliseconds = (new Date().getTime()) - myDateOfBirth;
+			const miliseconds = new Date().getTime() - myDateOfBirth;
 			setCurrentValue(miliseconds / 1000 / 60 / 60 / 24 / 365);
 		}, 100);
 		return () => clearInterval(interval);

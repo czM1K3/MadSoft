@@ -28,13 +28,17 @@ const About: NextPage<AboutProps> = () => {
 						layout="responsive"
 						sizes="50vw"
 						alt="Profile picture of Michal"
+						placeholder="blur"
 					/>
 				</div>
 			</div>
 			<p className={styles.text}>
-				{t("text1")}{` `}
-				{t("age")}{` `}
-				<Link href="/age">{t("here")}</Link>{`.`}
+				{t("text1")}
+				{` `}
+				{t("age")}
+				{` `}
+				<Link href="/age">{t("here")}</Link>
+				{`.`}
 			</p>
 
 			<h2 className={styles.heading}>{t("technologies")}</h2>

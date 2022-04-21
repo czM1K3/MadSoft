@@ -56,7 +56,7 @@ const Projects: Project[] = [
 		description: "CodeventureDescription",
 		url: "https://www.codeventure.cz/",
 		image: "/projects/codeventure.png",
-	}
+	},
 ];
 
 export default Projects;
