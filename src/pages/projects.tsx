@@ -6,10 +6,11 @@ import ProjectList from "../data/projects";
 import Project from "../components/project";
 import styles from "../styles/projects.module.scss";
 import { orderByName } from "../utils/order";
+import { getPlaiceholder } from "plaiceholder";
 
 type ProjectsProps = {
 	messages: any;
-	projects: ProjectType[];
+	projects: (ProjectType & { blurHash: string })[];
 };
 
 const Projects: NextPage<ProjectsProps> = ({ projects }) => {
@@ -25,6 +26,7 @@ const Projects: NextPage<ProjectsProps> = ({ projects }) => {
 							<Project
 								description={project.description}
 								image={project.image}
+								imageHash={project.blurHash}
 								title={project.title}
 								url={project.url}
 								download={project.download}
@@ -40,10 +42,16 @@ const Projects: NextPage<ProjectsProps> = ({ projects }) => {
 export const getStaticProps: GetStaticProps<ProjectsProps> = async ({
 	locale,
 }) => {
+	const projects = await Promise.all(
+		ProjectList.map(async (project) => ({
+			...project,
+			blurHash: (await getPlaiceholder(project.image, { size: 10 })).base64,
+		}))
+	);
 	return {
 		props: {
 			messages: (await import(`../../translations/${locale}.json`)).default,
-			projects: ProjectList,
+			projects,
 		},
 	};
 };
