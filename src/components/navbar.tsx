@@ -48,7 +48,7 @@ const Navbar: FC = () => {
 				</div>
 			</nav>
 
-			<ul className="sidenav" id="mobile-demo">
+			<ul className="sidenav sidenav-close" id="mobile-demo">
 				{NavbarItems.map((item) => (
 					<li key={item.url}>
 						<Link href={item.url}>{t(item.title)}</Link>
