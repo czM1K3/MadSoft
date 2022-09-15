@@ -3,7 +3,7 @@ import { NavbarItem } from "../types/navbar";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../assets/images/logo.png";
-import { useTranslations } from "next-intl";
+import useTranslation from "next-translate/useTranslation";
 import LanguageSwitch from "./language-switch";
 
 const NavbarItems: NavbarItem[] = [
@@ -22,7 +22,7 @@ const NavbarItems: NavbarItem[] = [
 ];
 
 const Navbar: FC = () => {
-	const t = useTranslations("Routing");
+	const { t } = useTranslation("common");
 	return (
 		<>
 			<nav>

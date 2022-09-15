@@ -1,5 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
-import { useTranslations } from "next-intl";
+import useTranslation from "next-translate/useTranslation";
 import { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import styles from "../styles/age.module.scss";
@@ -7,7 +7,7 @@ import styles from "../styles/age.module.scss";
 const myDateOfBirth = 1036048800000;
 
 const Age: NextPage = () => {
-	const t = useTranslations("Age");
+	const { t } = useTranslation("age");
 
 	const [currentValue, setCurrentValue] = useState(0);
 
@@ -27,14 +27,6 @@ const Age: NextPage = () => {
 			</div>
 		</Layout>
 	);
-};
-
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	return {
-		props: {
-			messages: (await import(`../../translations/${locale}.json`)).default,
-		},
-	};
 };
 
 export default Age;

@@ -1,17 +1,16 @@
 import type { GetStaticProps, NextPage } from "next";
 import Layout from "../../components/layout";
-import { useTranslations } from "next-intl";
+import useTranslation from "next-translate/useTranslation";
 import type { PrivacyPolicy as PrivacyPolicyType } from "../../types/privacyPolicy";
 import PrivacyPolicyPages from "../../data/privacyPolicy";
 import Link from "next/link";
 
 type PrivacyPolicyProps = {
-	messages: any;
 	pages: PrivacyPolicyType[];
 };
 
 const PrivacyPolicy: NextPage<PrivacyPolicyProps> = ({ pages }) => {
-	const t = useTranslations("PrivacyPolicy");
+	const { t } = useTranslation("privacy-policy");
 	return (
 		<Layout>
 			<h1>{t("title")}</h1>
@@ -31,7 +30,6 @@ export const getStaticProps: GetStaticProps<PrivacyPolicyProps> = async ({
 }) => {
 	return {
 		props: {
-			messages: (await import(`../../../translations/${locale}.json`)).default,
 			pages: PrivacyPolicyPages,
 		},
 	};

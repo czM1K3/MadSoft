@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import Layout from "../components/layout";
-import { useTranslations } from "next-intl";
+import useTranslation from "next-translate/useTranslation";
 import { Project as ProjectType } from "../types/project";
 import ProjectList from "../data/projects";
 import Project from "../components/project";
@@ -9,12 +9,11 @@ import { orderByName } from "../utils/order";
 import { getPlaiceholder } from "plaiceholder";
 
 type ProjectsProps = {
-	messages: any;
 	projects: (ProjectType & { blurHash: string })[];
 };
 
 const Projects: NextPage<ProjectsProps> = ({ projects }) => {
-	const t = useTranslations("Projects");
+	const { t } = useTranslation("projects");
 	return (
 		<Layout>
 			<h1 className={styles.heading}>{t("title")}</h1>
@@ -39,9 +38,7 @@ const Projects: NextPage<ProjectsProps> = ({ projects }) => {
 	);
 };
 
-export const getStaticProps: GetStaticProps<ProjectsProps> = async ({
-	locale,
-}) => {
+export const getStaticProps: GetStaticProps<ProjectsProps> = async () => {
 	const projects = await Promise.all(
 		ProjectList.map(async (project) => ({
 			...project,
@@ -50,7 +47,6 @@ export const getStaticProps: GetStaticProps<ProjectsProps> = async ({
 	);
 	return {
 		props: {
-			messages: (await import(`../../translations/${locale}.json`)).default,
 			projects,
 		},
 	};
