@@ -18,5 +18,9 @@
 	"DasakLunchTitle": "Dasak Lunch",
 	"DasakLunchDescription": "Dasak Lunch is app for photos of lunches on Dašák in Pardubice.",
 	"CodeventureTitle": "Codeventure",
-	"CodeventureDescription": "Codeventure is a game for primary school children that develops logical thinking."
+	"CodeventureDescription": "Codeventure is a game for primary school children that develops logical thinking.",
+	"MinecraftDashboardTitle": "Minecraft Dashboard",
+	"MinecraftDashboardDescription": "Minecraft Dashboard is webpage showing current state of Minecraft server.",
+	"PaperDockerTitle": "Paper Docker",
+	"PaperDockerDescription": "Paper Docker is the easiest way to run Minecraft server."
 }

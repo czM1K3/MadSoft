@@ -18,5 +18,9 @@
 	"DasakLunchTitle": "Dasak Lunch",
 	"DasakLunchDescription": "Dasak Lunch je aplikace pro focení obědů na Dašáku v Pardubicích.",
 	"CodeventureTitle": "Codeventure",
-	"CodeventureDescription": "Codeventure je hra pro děti na základních školách která rozvýjí logické myšlení."
+	"CodeventureDescription": "Codeventure je hra pro děti na základních školách která rozvýjí logické myšlení.",
+	"MinecraftDashboardTitle": "Minecraft Dashboard",
+	"MinecraftDashboardDescription": "Minecraft Dashboard je stránka ukazující stav Minecraftového serveru.",
+	"PaperDockerTitle": "Paper Docker",
+	"PaperDockerDescription": "Paper Docker je nejjednodušší způsob ja rozjet Minecraft server."
 }
