@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import Layout from "../components/layout";
-import { useTranslations } from "next-intl";
+import useTranslation from "next-translate/useTranslation";
 import Particles from "react-tsparticles";
 import styles from "../styles/index.module.scss";
 import Link from "next/link";
@@ -8,7 +8,6 @@ import Logo from "../assets/images/logo.png";
 import Image from "next/image";
 
 const Home: NextPage = () => {
-	const t = useTranslations("Index");
 	return (
 		<Layout disableContainer>
 			<div className={styles.middle}>
@@ -24,14 +23,6 @@ const Home: NextPage = () => {
 			<Particles url="/particles.json" />
 		</Layout>
 	);
-};
-
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	return {
-		props: {
-			messages: (await import(`../../translations/${locale}.json`)).default,
-		},
-	};
 };
 
 export default Home;

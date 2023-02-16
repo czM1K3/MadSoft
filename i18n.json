@@ -1,0 +1,12 @@
+{
+	"locales": ["cs", "en"],
+	"defaultLocale": "cs",
+	"logBuild": false,
+	"pages": {
+		"*": ["common"],
+		"/about": ["about"],
+		"/age": ["age"],
+		"/projects": ["projects"],
+		"/privacy-policy": ["privacy-policy"]
+	}
+}

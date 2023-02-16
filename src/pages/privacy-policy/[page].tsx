@@ -4,7 +4,6 @@ import PrivacyPolicyPages from "../../data/privacyPolicy";
 import type { PrivacyPolicy as PrivacyPolicyType } from "../../types/privacyPolicy";
 
 type PrivacyPolicyProps = {
-	messages: any;
 	data: PrivacyPolicyType;
 	locale: string;
 };
@@ -377,7 +376,6 @@ export const getStaticProps: GetStaticProps<PrivacyPolicyProps> = async ({
 	if (!current) return { notFound: true };
 	return {
 		props: {
-			messages: (await import(`../../../translations/${locale}.json`)).default,
 			data: current,
 			locale: locale ?? "en",
 		},

@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import useTranslation from "next-translate/useTranslation";
 import React, { FC } from "react";
 import { Project } from "../types/project";
 import styles from "../styles/projects.module.scss";
@@ -15,7 +15,7 @@ const Project: FC<ProjectProps> = ({
 	git,
 	imageHash,
 }) => {
-	const t = useTranslations("Projects");
+	const { t } = useTranslation("projects");
 	return (
 		<div className="card">
 			<div className="card-image">

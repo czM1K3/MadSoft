@@ -25,7 +25,7 @@ const Projects: Project[] = [
 		title: "MaturitaTitle",
 		description: "MaturitaDescription",
 		url: "https://maturita.madsoft.cz/",
-		git: "https://github.com/czM1K3/maturita",
+		// git: "https://github.com/czM1K3/maturita",
 		image: "/projects/maturita.webp",
 	},
 	{
@@ -56,6 +56,19 @@ const Projects: Project[] = [
 		description: "CodeventureDescription",
 		url: "https://www.codeventure.cz/",
 		image: "/projects/codeventure.png",
+	},
+	{
+		title: "MinecraftDashboardTitle",
+		description: "MinecraftDashboardDescription",
+		url: "https://minecraft.madsoft.cz/",
+		git: "https://github.com/czM1K3/minecraft-server-dashboard-2",
+		image: "/projects/minecraft-dashboard.png",
+	},
+	{
+		title: "PaperDockerTitle",
+		description: "PaperDockerDescription",
+		git: "https://github.com/czM1K3/Paper-Docker",
+		image: "/projects/minecraft.png",
 	},
 ];
 

@@ -9,7 +9,6 @@ import { useRouter } from "next/router";
 import styles from "../styles/memes.module.scss";
 
 type MemesProps = {
-	messages: any;
 	videos: VideoType[];
 };
 
@@ -64,12 +63,9 @@ const Memes: NextPage<MemesProps> = ({ videos }) => {
 	);
 };
 
-export const getStaticProps: GetStaticProps<MemesProps> = async ({
-	locale,
-}) => {
+export const getStaticProps: GetStaticProps<MemesProps> = async () => {
 	return {
 		props: {
-			messages: (await import(`../../translations/${locale}.json`)).default,
 			videos: MemeList,
 		},
 	};

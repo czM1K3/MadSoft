@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import Layout from "../components/layout";
-import { useTranslations } from "next-intl";
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import ProfilePicture from "../assets/images/profile.jpeg";
 import styles from "../styles/about.module.scss";
@@ -12,12 +12,11 @@ import Technologies from "../data/technologies";
 import { orderByName } from "../utils/order";
 
 type AboutProps = {
-	messages: any;
 	contacts: IconType[];
 };
 
 const About: NextPage<AboutProps> = () => {
-	const t = useTranslations("About");
+	const { t } = useTranslation("about");
 	return (
 		<Layout>
 			<h1 className={styles.heading}>{t("title")}</h1>
@@ -67,12 +66,9 @@ const About: NextPage<AboutProps> = () => {
 	);
 };
 
-export const getStaticProps: GetStaticProps<AboutProps> = async ({
-	locale,
-}) => {
+export const getStaticProps: GetStaticProps<AboutProps> = async () => {
 	return {
 		props: {
-			messages: (await import(`../../translations/${locale}.json`)).default,
 			contacts: Contacts,
 		},
 	};
